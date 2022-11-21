@@ -1,0 +1,285 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none
+}
+
+:root {
+    --bg-color: #F3F3F3;
+    --bg-second-color: #ABD0DC;
+    --primary-text-color: #FFFFFF;
+    --second-text-color: #000000;
+    --tertiary-text-color: #317ABD;
+    --fourth-text-color: #6AFFED;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* CABEÇALHO */
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+header {
+    display: flex;
+    background-color: var(--bg-second-color);
+    height: 70px;
+    justify-content: space-around;
+}
+
+.skypiea {
+    color: var(--primary-text-color);
+    padding-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.frase {
+    padding-top: 27px;
+    color: var(--tertiary-text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    display: flex;
+    max-height: 32px;
+    width: 582px;
+    border-radius: 9px;
+    transform: translateY(+60%)
+}
+
+.menu {
+    right: 20px;
+    padding-top: 24px;
+    color: var(--primary-text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CARRINHO */
+.itensCarrinho {
+    padding-bottom: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.titulo {
+    text-align: center;
+    color: var(--second-text-color);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid var(--second-text-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+span {
+    color: var(--tertiary-text-color);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.infoProduto {
+    color: var(--second-text-color);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao {
+    color: var(--second-text-color);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--tertiary-text-color);
+    padding: 2px 10px;
+    border-radius: 15px;
+}
+
+
+/* RODAPÉ */
+footer {
+    display: flex;
+    background-image: url(../img/banner.svg);
+    min-height: 342px;
+    justify-content: space-around;
+    background-size: cover;
+}
+
+.page {
+    display: flex;
+    color: var(--primary-text-color);
+    padding-top: 45px;
+    font-family: 'Montserrat';
+}
+
+.pagina {
+    padding-top: 20px;
+    border-bottom: 1px solid var(--primary-text-color);
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--second-text-color);
+}
+
+footer ul li .skypiea {
+    padding-top: 45px;
+}
+
+.contato {
+    padding-top: 20px;
+    border-bottom: 1px solid var(--primary-text-color);
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+.redes {
+    display: flex;
+    border-bottom: 1px solid var(--primary-text-color);
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+
+.redes .social {
+    padding-top: 4px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding-left: 7px;
+    color: var(--second-text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .skypiea {
+        font-size: 20px;
+        margin-top: 7px;
+    }
+
+    .frase {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+    }
+
+    input {
+        width: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 830px) {
+    * {
+        font-size: 15px;
+    }
+
+    .skypiea {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+
+    .frase {
+        font-size: 10px;
+    }
+
+    .menu {
+        font-size: 10px;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    .nome-icon {
+        font-size: 5px;
+    }
+
+    .redes .social {
+        padding-top: 0;
+        font-size: 10px;
+        padding-left: 7px;
+    }
+
+    .pagina {
+        font-size: 10px;
+    }
+
+    .titulo {
+        font-size: 10px;
+        width: 500px;
+    }
+
+    .icon-social {
+        height: 15px;
+        width: 15px;
+    }
+
+    .banner {
+        width: 200%;
+        min-height: 150px;
+        height: 150px;
+    }
+
+    .logo {
+        max-width: 30px;
+        max-height: 30px;
+        margin-top: 20px;
+    }
+
+    header {
+        width: 200%;
+    }
+
+    footer {
+        width: 200%;
+    }
+
+    .produtos {
+        width: 200%;
+    }
+
+    .contato {
+        font-size: 10px;
+    }
+
+    .icons {
+    transform: translateX(+50%)
+    }
+    
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .icons {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+}

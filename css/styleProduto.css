@@ -1,0 +1,410 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none
+}
+
+:root {
+    --bg-color: #F3F3F3;
+    --bg-second-color: #ABD0DC;
+    --primary-text-color: #FFFFFF;
+    --second-text-color: #000000;
+    --tertiary-text-color: #317ABD;
+    --fourth-text-color: #6AFFED;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* CABEÇALHO */
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+header {
+    display: flex;
+    background-color: var(--bg-second-color);
+    height: 70px;
+    justify-content: space-around;
+}
+
+.skypiea {
+    color: var(--primary-text-color);
+    padding-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.frase {
+    padding-top: 27px;
+    color: var(--tertiary-text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#pesquisa {
+    display: flex;
+    max-height: 32px;
+    width: 582px;
+    border-radius: 9px;
+    transform: translateY(+60%)
+}
+
+.menu {
+    right: 20px;
+    padding-top: 24px;
+    color: var(--primary-text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Icons */
+.icons {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons .nome-icon {
+    padding: 0;
+    font-family: 'Solway';
+    color: var(--second-text-color);
+    font-size: 13.5px;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+/* PRODUTO */
+.img-produto {
+    margin-left: 120px;
+    border: 2px solid var(--bg-second-color);
+    border-radius: 10px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.produto {
+    text-align: start;
+    margin-right: 120px;
+    width: 400px;
+}
+
+.produto .nomeProduto {
+    text-align: center;
+    color: var(--second-text-color);
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.produto .preco {
+    text-align: center;
+    color: var(--tertiary-text-color);
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 134px;
+}
+
+.produto .desconto {
+    text-align: center;
+    color: var(--bg-second-color);
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 132px;
+}
+
+.produto .frete {
+    display: flex;
+    text-align: center;
+    color: #008000;
+    font-family: 'Poppins';
+    font-size: 15px;
+    width: 132px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.iconFrete {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.pagamento {
+    max-width: 300px;
+}
+
+.produto .compreAgora {
+    color: var(--primary-text-color);
+    background-color:var(--bg-second-color);
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-size: 17px;
+    bottom: 95px;
+    left: 100px;
+    text-align: center;
+    max-width: 60%;
+}
+
+.produto .adicionarCarrinho {
+    color: var(--bg-second-color);
+    background-color: var(--primary-text-color);
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-size: 17px;
+    bottom: 95px;
+    left: 100px;
+    text-align: center;
+    margin-top: 15px;
+    max-width: 60%;
+}
+
+.compreAgora:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.adicionarCarrinho:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.produto .estrela {
+    max-width: 120px;
+    height: 20px;
+}
+
+.produtos .img-produto {
+    display: flex;
+    width: 400px;
+    height: 400px;
+}
+
+.descricao {
+    font-family: 'Poppins';
+    padding-top: 20px;
+    color: var(--tertiary-text-color);
+    padding-bottom: 80px;
+    max-width: 900px;
+    transform: translateX(24%);
+    margin-bottom: 60px;
+}
+
+.descricao span {
+    font-size: 15px;
+    color: var(--second-text-color);
+}
+
+textarea {
+    border: 2px solid var(--tertiary-text-color);
+    height: 150px;
+    width: 900px;
+    transform: translate(140px, -50px);
+}
+
+.enviar {
+    color: var(--tertiary-text-color);
+    background-color:var(--bg-second-color);
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-size: 17px;
+    text-align: center;
+    max-width: 8%;
+    margin-bottom: 90px;
+    border: 2px solid var(--tertiary-text-color);
+}
+
+.enviar:hover {
+    cursor: pointer;
+}
+
+/* RODAPÉ */
+footer {
+    display: flex;
+    background-image: url(../img/banner.svg);
+    min-height: 342px;
+    justify-content: space-around;
+    background-size: cover;
+}
+
+.page {
+    display: flex;
+    color: var(--primary-text-color);
+    padding-top: 45px;
+    font-family: 'Montserrat';
+}
+
+.pagina {
+    padding-top: 20px;
+    border-bottom: 1px solid var(--primary-text-color);
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--second-text-color);
+}
+
+footer ul li .skypiea {
+    padding-top: 45px;
+}
+
+.contato {
+    padding-top: 20px;
+    border-bottom: 1px solid var(--primary-text-color);
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+.redes {
+    display: flex;
+    border-bottom: 1px solid var(--primary-text-color);
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+
+.redes .social {
+    padding-top: 4px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding-left: 7px;
+}
+
+/* MOBILE */
+
+@media (max-width: 1200px) {
+    .skypiea {
+        font-size: 20px;
+        margin-top: 7px;
+    }
+
+    .frase {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+    }
+
+    input {
+        width: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    input {
+        width: 250px;
+    }
+
+    header {
+        width: 340%;
+    }
+
+    footer {
+        width: 340%;
+    }
+}
+
+@media (max-width: 830px) {
+    * {
+        font-size: 15px;
+    }
+
+    .skypiea {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+
+    .frase {
+        font-size: 10px;
+    }
+
+    .menu {
+        font-size: 10px;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    .nome-icon {
+        font-size: 5px;
+    }
+
+    .redes .social {
+        padding-top: 0;
+        font-size: 10px;
+        padding-left: 7px;
+    }
+
+    .pagina {
+        font-size: 10px;
+    }
+
+    .titulo {
+        font-size: 10px;
+        transform: translateX(44.5%);
+    }
+
+    .icon-social {
+        height: 15px;
+        width: 15px;
+    }
+
+    .logo {
+        max-width: 30px;
+        max-height: 30px;
+        margin-top: 20px;
+    }
+
+    header {
+        width: 240%;
+    }
+
+    footer {
+        width: 240%;
+    }
+
+    textarea {
+        max-width: 800px;
+    }
+
+    .produtos {
+        transform: translateX(60%);
+    }
+
+    .produto {
+        transform: translateX(30%);
+    }
+
+    .enviar {
+        max-width: 100px;
+        transform: translate(800px, -30px);
+    }
+
+    span {
+        max-width: 20%
+    }
+}
+
+a {
+    text-decoration: none;
+}

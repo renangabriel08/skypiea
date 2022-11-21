@@ -1,0 +1,402 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none
+}
+
+:root {
+    --bg-color: #F3F3F3;
+    --bg-second-color: #ABD0DC;
+    --primary-text-color: #FFFFFF;
+    --second-text-color: #000000;
+    --tertiary-text-color: #317ABD;
+    --fourth-text-color: #6AFFED;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* CABEÇALHO */
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+header {
+    display: flex;
+    background-color: var(--bg-second-color);
+    height: 70px;
+    justify-content: space-around;
+}
+
+.skypiea {
+    color: var(--primary-text-color);
+    padding-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.frase {
+    padding-top: 27px;
+    color: var(--tertiary-text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    display: flex;
+    max-height: 32px;
+    width: 582px;
+    border-radius: 9px;
+    transform: translateY(+60%)
+}
+
+.menu {
+    right: 20px;
+    padding-top: 24px;
+    color: var(--primary-text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Icons */
+.icons {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons .nome-icon {
+    padding: 0;
+    font-family: 'Solway';
+    color: var(--second-text-color);
+    font-size: 13.5px;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+/* BANNER*/
+.banner {    
+    display: flex;
+    background-image: url(../img/banner.svg);
+    min-height: 342px;
+    justify-content: space-around;
+    background-size: cover;
+}
+
+.elementos-banner {
+    display: flex;
+    position: absolute;
+    gap: 150px;
+}
+
+.etiqueta {
+    padding-top: 80px;
+}
+
+.elementos-banner ul li {
+    padding-top: 100px;
+}
+
+.elementos-banner  ul li h2 {
+    color: var(--primary-text-color);
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+
+.elementos-banner ul li h3 {
+    color: var(--primary-text-color);
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.elementos-banner h4 {
+    color: var(--primary-text-color);
+    font-size: 15px;
+    padding-top: 25px;
+}
+
+.elementos-banner h4 span {
+    color: var(--fourth-text-color);
+    font-size: 15px;
+}
+
+/* LOJAS */
+.lojas {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Poppins';
+    color: var(--second-text-color);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+
+.loja{
+    position: relative;
+    display: flex;
+    padding-bottom: 70px;
+    gap: 50px;
+}
+
+.loja .nomeLoja {
+    position: absolute;
+    z-index: 2;
+    margin-left: 93px;
+    margin-top: 20px;
+    color: var(--primary-text-color);
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.loja .compreAgora {
+    position: absolute;
+    color: var(--second-text-color);
+    background-color: var(--bg-color);
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    bottom: 95px;
+    left: 100px;
+}
+
+.compreAgora:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+/* RODAPÉ */
+footer {
+    display: flex;
+    background-image: url(../img/banner.svg);
+    min-height: 342px;
+    justify-content: space-around;
+    background-size: cover;
+}
+
+.page {
+    display: flex;
+    color: var(--primary-text-color);
+    padding-top: 45px;
+    font-family: 'Montserrat';
+}
+
+.pagina {
+    padding-top: 20px;
+    border-bottom: 1px solid var(--primary-text-color);
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--second-text-color);
+}
+
+footer ul li .skypiea {
+    padding-top: 45px;
+}
+
+.contato {
+    padding-top: 20px;
+    border-bottom: 1px solid var(--primary-text-color);
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+.redes {
+    display: flex;
+    border-bottom: 1px solid var(--primary-text-color);
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+
+.redes .social {
+    padding-top: 4px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding-left: 7px;
+}
+
+/* MOBILE */
+
+@media (max-width: 1200px) {
+    .skypiea {
+        font-size: 20px;
+        margin-top: 7px;
+    }
+
+    .frase {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+    }
+
+    input {
+        width: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 830px) {
+    * {
+        font-size: 15px;
+    }
+
+    .skypiea {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+
+    .frase {
+        font-size: 10px;
+    }
+
+    .menu {
+        font-size: 10px;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    .nome-icon {
+        font-size: 5px;
+    }
+
+    .redes .social {
+        padding-top: 0;
+        font-size: 10px;
+        padding-left: 7px;
+    }
+
+    .pagina {
+        font-size: 10px;
+    }
+
+    .titulo {
+        font-size: 10px;
+        transform: translateX(44.5%);
+    }
+
+    .icon-social {
+        height: 15px;
+        width: 15px;
+    }
+
+    .banner {
+        width: 200%;
+        min-height: 150px;
+        height: 150px;
+    }
+
+    .logo {
+        max-width: 30px;
+        max-height: 30px;
+        margin-top: 20px;
+    }
+
+    header {
+        width: 200%;
+    }
+
+    footer {
+        width: 200%;
+    }
+
+    .lojas{
+        transform: translateX(+40%)
+    }
+
+    .contato {
+        font-size: 10px;
+    }
+
+    .icons {
+    transform: translateX(+50%)
+    }
+
+    .elementos-banner {
+        gap: 30px;
+        padding-top: 23px;
+    }
+
+    .elementos-banner  ul li h2 {
+        font-size: 15px;
+    }
+    
+    .etiqueta {
+        width: 100px;
+        height: 100px;
+        padding-top: 0;
+    }
+
+    .banner {
+        height: 50px;
+    }
+    
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .icons {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .elementos-banner ul li {
+        padding-top: 0;
+        width: 180px;
+        height: 70px;
+        padding-top: 20px;
+    }
+
+    .elementos-banner ul {
+        padding-top: 0;
+        width: 180px;
+        height: 70px;
+    }
+
+    .elementos-banner ul li h3 {
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    
+    .elementos-banner h4 {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    
+    .elementos-banner h4 span {
+        font-size: 10px;
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
